@@ -13,6 +13,12 @@ var app = angular
       .when('/', {
         templateUrl: 'views/main.html'        
       })
+      .when('/login', {
+			templateUrl: 'views/login.html'
+      })
+      .when('/register', {
+      	templateUrl: 'views/register.html'
+      })
       .when('/edit/:taskId', {
         templateUrl: 'views/edit.html',
         controller: 'TaskController'
